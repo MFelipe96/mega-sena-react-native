@@ -17,20 +17,23 @@ const styles = StyleSheet.create({
     spaceNumberContainer: {
         padding: 10,
     },
-    numbersSorted:{
+    numbersDrawn:{
         fontSize: 30,
         color: '#000000',
     },
-    numbersSortedText:{
+    numbersDrawnText:{
         fontSize:24,
         marginTop: 30,
         fontWeight: 'bold',
     },
-    sortButton: {
+    generatorButton: {
         width: '70%',
-        backgroundColor: '#fffddd'
+        backgroundColor: '#fffddd',
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
-    sortButtonText: {
+    generatorButtonText: {
         padding: 10,
         fontWeight: 'bold',
         fontSize: 20,

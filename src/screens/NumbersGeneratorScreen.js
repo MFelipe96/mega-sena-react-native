@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, Text} from 'react-native';
 import styles from '../styles/NumbersGeneratorStyle';
+import NumbersGeneratorButton from '../components/NumbersGeneratorButton'
 
 export default _ => {
   const [values, setValue] = useState(['* ', '* ', '* ', '* ', '* ', '* ']);
@@ -21,16 +22,12 @@ export default _ => {
   return (
     <>
       <View style={styles.container}>
-        <Text style={styles.numbersSortedText}>Números Sorteados</Text>
+        <Text style={styles.numbersDrawnText}>Números Sorteados</Text>
         <View style={styles.numbersContainer}>
-          <Text style={styles.numbersSorted}>{values.join(' ')}</Text>
+          <Text style={styles.numbersDrawn}>{values.join(' ')}</Text>
         </View>
 
-        <TouchableOpacity
-          style={styles.sortButton}
-          onPress={() => getRandomNumbers()}>
-          <Text style={styles.sortButtonText}>Sortear</Text>
-        </TouchableOpacity>
+        <NumbersGeneratorButton getNumbers = {getRandomNumbers}/>
       </View>
     </>
   );
