@@ -1,8 +1,10 @@
 import {StyleSheet} from 'react-native';
+import { COLORS } from './colors';
 
 const styles = StyleSheet.create({
     container: {
-        justifyContent: 'center',
+        flex: 1,
+        justifyContent: 'flex-start',
         alignItems: 'center',
     },
     numbersContainer:{
@@ -11,14 +13,16 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         elevation: 8,
-        padding: 8,
+        flexDirection: 'row',
+        paddingHorizontal: 16,
+        paddingVertical: 12,
         margin: 20
     },
     spaceNumberContainer: {
         padding: 10,
     },
     numbersDrawn:{
-        fontSize: 30,
+        fontSize: 25,
         color: '#000000',
     },
     numbersDrawnText:{
@@ -27,15 +31,17 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     generatorButton: {
-        width: '70%',
-        backgroundColor: '#fffddd',
-        borderRadius: 10,
-        justifyContent: 'center',
+        width:150,
+        backgroundColor: COLORS.greenDark,
+        borderRadius: 5,
+        margin:20,
         alignItems: 'center',
+        justifyContent: 'center',
     },
     generatorButtonText: {
         padding: 10,
         fontWeight: 'bold',
+        color: COLORS.white,
         fontSize: 20,
     }
     
