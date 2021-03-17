@@ -3,7 +3,7 @@ import { COLORS } from './colors';
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        flex: 2,
         justifyContent: 'flex-start',
         alignItems: 'center',
     },
@@ -35,14 +35,23 @@ const styles = StyleSheet.create({
         backgroundColor: COLORS.greenDark,
         borderRadius: 5,
         margin:20,
-        alignItems: 'center',
-        justifyContent: 'center',
+        alignItems: 'center', 
+        elevation: 8,
     },
     generatorButtonText: {
         padding: 10,
         fontWeight: 'bold',
         color: COLORS.white,
-        fontSize: 20,
+        fontSize: 22,
+    },
+    selectedNumbersText: {
+        fontSize: 30,
+        marginTop: 80
+    },
+    generatorButtonView: {
+        alignItems: 'center', 
+        flex: 1, 
+        justifyContent: 'center'
     }
     
 })

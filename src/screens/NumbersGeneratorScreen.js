@@ -68,8 +68,9 @@ export default _ => {
             />
           </View>
         </View>
+          <Text style={styles.selectedNumbersText}>Números escolhidos</Text>
       </View>
-      <View style={{ alignItems: 'center' }}>
+      <View style={styles.generatorButtonView}>
         <NumbersGeneratorButton getNumbers={getRandomNumbers} />
       </View>
     </>
